@@ -264,7 +264,9 @@
   <a href="#" class="dropdown-toggle" data-toggle="dropdown">Page <b class="caret"></b></a>
   <ul class="dropdown-menu localtoc"><ul>
 <li><a class="reference internal" href="#">Lab 2</a><ul>
-<li><a class="reference internal" href="#section-1-introduction">Section 1: Introduction</a></li>
+<li><a class="reference internal" href="#section-0-introduction">Section 0: Introduction</a></li>
+<li><a class="reference internal" href="#section-1-console-input-and-string-concatenation">Section 1: Console input and string concatenation</a></li>
+<li><a class="reference internal" href="#section-2">Section 2:</a></li>
 </ul>
 </li>
 </ul>
@@ -301,15 +303,47 @@
   
   <div class="section" id="lab-2">
 <h1>Lab 2<a class="headerlink" href="#lab-2" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="section-1-introduction">
-<h2>Section 1: Introduction<a class="headerlink" href="#section-1-introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="section-0-introduction">
+<h2>Section 0: Introduction<a class="headerlink" href="#section-0-introduction" title="Permalink to this headline">¶</a></h2>
 <p>Welcome to our new shiny lab system. This system is intended to teach you how to do Python interactively. We&#8217;re going to use some cool drop-ins, you&#8217;ve seen the professor program up on the projector in class. Now you can try it within this page!</p>
+<dl class="docutils">
+<dt>The objectives of this lab are:</dt>
+<dd><ul class="first last simple">
+<li>To practice writing simple interactive scripts using the input() functions</li>
+<li>To learn basic string manipulation</li>
+<li>To learn new ways of outputting strings</li>
+</ul>
+</dd>
+</dl>
+<p>There are 3 checkpoints.</p>
+</div>
+<div class="section" id="section-1-console-input-and-string-concatenation">
+<h2>Section 1: Console input and string concatenation<a class="headerlink" href="#section-1-console-input-and-string-concatenation" title="Permalink to this headline">¶</a></h2>
+<p>So far in class, we&#8217;ve learned how to do some arithmetic and how to print strings using <code class="docutils literal"><span class="pre">print()</span></code></p>
+<p>To recap the print statement can print multiple strings using a comma between arguments.</p>
 
 <textarea data-component="activecode" id=PrintingAList data-lang="python"    data-timelimit=25000 data-coach="true" data-codelens="true" data-audio=''     >
-print("My first program adds a list of numbers")
-print(total)
+print("I like","pancakes","and","waffles","and",
+"hashbrowns")
 </textarea>
-<p>After hitting run, try clicking <code class="docutils literal"><span class="pre">Show</span> <span class="pre">CodeLens</span></code> and you&#8217;ll see a step through of the program. Basically, we&#8217;ll write a bit about what we want you to learn, you can try some examples, then you&#8217;ll be asked to complete a check point by opening up your Wings101 editor and typing out the solution to a problem.</p>
+<p>If you noticed, this example will add a space between each argument! Unfortunately, output only programs aren&#8217;t very interactive. Let&#8217;s change that using the
+<code class="docutils literal"><span class="pre">input()</span></code>. First a word of warning. When we show you
+examples though ActiveCode, a small window will pop up asking you to input your answer when you use <code class="docutils literal"><span class="pre">input()</span></code>. That will not be the case in Wings101.</p>
+<p>Go ahead and try out this example.</p>
+
+<textarea data-component="activecode" id=AddingItAllUp data-lang="python"    data-timelimit=25000 data-coach="true" data-codelens="true" data-audio=''     >
+print('Fancy String Adder')
+first = input('Please enter a string:')
+second = input('Please enter another string:')
+
+print('The addition of your strings is:', first+second)
+</textarea>
+<p>If you noticed, instead of using the comma to combine the strings <code class="docutils literal"><span class="pre">first</span></code> and <code class="docutils literal"><span class="pre">second</span></code> we&#8217;re using the <code class="docutils literal"><span class="pre">+</span></code> operator. This operator not only works with numbers it also works with string types as well. This is called String Concatenation and is very useful for interactive applications.</p>
+<p>Checkpoint 1</p>
+<p>Write a short script in Wings101 using the String Adder code. Add another input and concatenate it to the final output string. Show your TA</p>
+</div>
+<div class="section" id="section-2">
+<h2>Section 2:<a class="headerlink" href="#section-2" title="Permalink to this headline">¶</a></h2>
 </div>
 </div>
 
